@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Grade Check</h1>
+    <form onsubmit="conditionCheck(); return false">
+        <label for="grade">Grade Check:</label>
+        <input type="number" id="grade">
+        <input type="Submit" value="Check">
+    </form>
+
+    <p id="result"></p>
+
+    <script>
+        function conditionCheck() {
+            let grade = +document.getElementById("grade").value;
+
+            if (grade > 99) {
+                document.getElementById("result").innerHTML = "A+ Grade Outstanding✨ "
+                return;
+            }
+            else if(grade > 90){
+                document.getElementById("result").innerHTML = "A+ Grade Outstanding✨"
+                return;
+            }
+            else if (grade > 85) {
+                document.getElementById("result").innerHTML = "A+ Grade Outstanding✨"
+                return;
+            }
+            else if(grade > 80){
+                document.getElementById("result").innerHTML = "A+ Grade Oustanding✨"
+                return;
+            }
+            else if (grade > 75){
+                document.getElementById("result").innerHTML = "A Grade Keep it  up😇"
+                return;
+            }
+            else if (grade > 70) {
+                document.getElementById("result").innerHTML = "A Grade Keep it up 😇 "
+                return;
+            }
+            else if (grade > 65) {
+                document.getElementById("result").innerHTML = "B Grade Average ✍️ "
+                return;
+            }
+            else if (grade > 60) {
+                document.getElementById("result").innerHTML = "B Grade Average ✍️ "
+                return;
+            }
+            else if (grade > 55) {
+                document.getElementById("result").innerHTML = "C Grade Need to imrpove yourself 📚"
+                return;
+            }
+            else if (grade > 50) {
+                document.getElementById("result").innerHTML = "C  Grade Need to imrpove yourself 📚"
+                return;
+            }
+            else if (grade > 45) {
+                document.getElementById("result").innerHTML = "Fail Better luck next time  👍 "
+                return;
+            }
+            else if (grade > 40) {
+                document.getElementById("result").innerHTML = "Fail Better luck Next time  👍 "
+                return;
+            }
+            else if (grade > 0) {
+                document.getElementById("result").innerHTML = "You need to Focus on your study for more Improvements ✍️"
+                return;
+            }
+            else {
+                document.getElementById("result").innerHTML = "Dont lose Hope you can do it Keep trying 🙌"
+            }
+        }
+    </script>
+</body>
+
+</html>
